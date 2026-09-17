@@ -22,10 +22,6 @@ export default function Home() {
       <Contact />
 
       {/* MODAL COMPONENT */}
-      <WeServModal
-        isOpen={isWeServOpen}
-        onClose={() => setIsWeServOpen(false)}
-      />
     </main>
   );
 }

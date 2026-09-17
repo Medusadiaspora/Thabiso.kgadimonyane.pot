@@ -7,6 +7,7 @@ import CyberManifesto from "./sections/CyberManifesto";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 import WeServModal from "./components/WeServModal";
+// Or: import { WeServModal } from "./components/WeServModal";
 
 export default function Home() {
   const [isWeServOpen, setIsWeServOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Home() {
       <Hero />
       <CyberManifesto />
       <Skills />
-
+      <WeServModal />
       <Contact />
 
       {/* MODAL COMPONENT */}

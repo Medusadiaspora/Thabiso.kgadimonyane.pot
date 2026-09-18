@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import VisitorCounter from "@/app/components/VisitorCounter";
 
 export const metadata: Metadata = {
   title: "BOONDOCK CYBERDEV | Thabiso Carlton Kgadimonyane",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <VisitorCounter />
+      </body>
     </html>
   );
 }
